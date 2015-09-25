@@ -1,0 +1,33 @@
+﻿<bpel:process xmlns:bpdm="http://www.intalio/designer/business-process-data-modeling" xmlns:mapper="http://www.intalio.com/designer/mapper" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.parasoft.com/wsdl/calculator/" xmlns:this="http://thisdiagram/s" xmlns:Pool="http://thisdiagram/Pool" xmlns:diag="http://thisdiagram" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:pnlk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ode="http://www.apache.org/ode/type/extension" targetNamespace="http://thisdiagram/s">
+    <bpdm:dependencies version="6000089">
+        <bpdm:namespaceDefinition bpdm:uri="http://www.w3.org/2001/XMLSchema" bpdm:prefix="xs"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.w3.org/2001/XMLSchema-instance" bpdm:prefix="xsi"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.parasoft.com/wsdl/calculator/" bpdm:prefix="tns" bpdm:comment="contrib=&apos;project:///calculator.wsdl"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://thisdiagram/s" bpdm:prefix="this" bpdm:type="this_process"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://thisdiagram/Pool" bpdm:prefix="Pool" bpdm:comment="contrib=&apos;partner-pool:///_NZ5C4GM8EeWE96vyQ05Dvg"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://thisdiagram" bpdm:prefix="diag" bpdm:comment="contrib=&apos;partner-pool:///_NZ5C4GM8EeWE96vyQ05Dvg"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.w3.org/XML/1998/namespace" bpdm:prefix="xml"></bpdm:namespaceDefinition>
+        <bpdm:namespaceContributor bpdm:url="thisprocess://this-process-types" bpdm:label="process defined this-process-types"></bpdm:namespaceContributor>
+        <bpdm:namespaceContributor bpdm:url="partner-pool:///_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:label="Pool"/>
+        <bpdm:namespaceContributor bpdm:url="project:///calculator.wsdl"/>
+    </bpdm:dependencies>
+    <bpel:scope bpdm:label="s" bpdm:ID="_hVAtgGM8EeWE96vyQ05Dvg">
+        <bpel:partnerLinks>
+            <bpel:partnerLink name="sAndPoolForPortICalculatorPlkVar" partnerLinkType="diag:sAndPoolForPortICalculatorPlk" myRole="s_for_Pool" bpdm:enableSharing="false" bpdm:providedService="tns:Calculator" bpdm:providedPort="ICalculator" bpdm:provideSOAPAddress="http://ws1.parasoft.com/glue/calculator" bpdm:providedIsDefault="true" bpdm:clientTasks="_hVAtgGM8EeWE96vyQ05Dvg:_ADRlFmNSEeWE96vyQ05Dvg" bpdm:isManaged="true" bpdm:otherPoolId="_NZ5C4GM8EeWE96vyQ05Dvg"/>
+        </bpel:partnerLinks>
+        <bpel:variables>
+            <bpel:variable name="TotalCalculatedValueSoap" messageType="tns:multiply2In" binding="tns:ICalculator" operation="multiply" opMsgType="0" bpdm:id="_A9-512NSEeWE96vyQ05Dvg" bpdm:messageIds="inc:_A9ZD8GNSEeWE96vyQ05Dvg"/>
+            <bpel:variable name="CalculatedResult" messageType="tns:multiply2Out" binding="tns:ICalculator" operation="multiply" opMsgType="1" bpdm:id="_BaJRYGNSEeWE96vyQ05Dvg" bpdm:messageIds=" out:_BZtMgGNSEeWE96vyQ05Dvg">
+                <bpel:from bpdm:toPart="parameters">
+                    <bpel:literal bpdm:linkedMessageType="tns:multiply2Out" bpdm:linkedPart="parameters" bpdm:binding="tns:ICalculator" bpdm:opMsgType="1" bpdm:operation="multiply"></bpel:literal>
+                </bpel:from>
+            </bpel:variable>
+        </bpel:variables>
+        <bpel:sequence>
+            <bpdm:messagingtask operation="multiply" partnerLink="sAndPoolForPortICalculatorPlkVar" portType="tns:ICalculator" isMyRole="true" enableSharing="false" bpdm:label="multiply" bpdm:ID="_ADRlFmNSEeWE96vyQ05Dvg">
+                <bpdm:linkset bpdm:type="incomingMessage" bpdm:bpeltype="receive" bpdm:messageVariable="TotalCalculatedValueSoap" bpdm:msgVarScopeId="_hVAtgGM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="tns:multiply2In" bpdm:binding="tns:ICalculator" bpdm:ID="_A9ZD8GNSEeWE96vyQ05Dvg"></bpdm:linkset>
+                <bpdm:linkset bpdm:type="outgoingMessage" bpdm:bpeltype="reply" bpdm:messageVariable="CalculatedResult" bpdm:msgVarScopeId="_hVAtgGM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="tns:multiply2Out" bpdm:binding="tns:ICalculator" bpdm:ID="_BZtMgGNSEeWE96vyQ05Dvg"></bpdm:linkset>
+            </bpdm:messagingtask>
+        </bpel:sequence>
+    </bpel:scope>
+</bpel:process>

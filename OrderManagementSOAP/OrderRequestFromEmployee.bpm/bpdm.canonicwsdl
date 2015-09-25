@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<wsdl:definitions xmlns:diag="http://thisdiagram" xmlns:Pool="http://thisdiagram/Pool" xmlns:s="http://thisdiagram/s" xmlns:OrderApprovalSOAP1="http://www.intalio.com/gi/OrderApprovalSOAP.gi" xmlns:OrderApprovalSOAP="http://www.intalio.com/gi/OrderApprovalSOAP.gi/attachments" xmlns:OrderRequestSOAP="http://www.intalio.com/gi/OrderRequestSOAP.gi" xmlns:attachments="http://www.intalio.com/gi/OrderRequestSOAP.gi/attachments" xmlns:tns="http://www.parasoft.com/wsdl/calculator/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:pnlk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:bpdm="http://www.intalio/designer/business-process-data-modeling" targetNamespace="http://thisdiagram" bpdm:version="6000089" bpdm:canid="_NYxBgGM8EeWE96vyQ05Dvg" bpdm:displayName="diag">
+  <pnlk:partnerLinkType name="EmployeeAndPool" bpdm:poolOneId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:poolOneIsExecutable="true" bpdm:poolOneName="Pool" bpdm:poolTwoId="_g0L4YGM8EeWE96vyQ05Dvg" bpdm:poolTwoIsExecutable="false" bpdm:poolTwoName="Employee">
+    <pnlk:role name="Pool_for_Employee" portType="Pool:ForEmployee" bpdm:thisPoolId="_NZ5C4GM8EeWE96vyQ05Dvg">
+      <wsdl:portType name="ForEmployee">
+        <wsdl:operation name="Order__Request_From_Employee" bpdm:canid="_NZ5C4mM8EeWE96vyQ05Dvg._h-5QoGM_EeWE96vyQ05Dvg." bpdm:dataobjectPointer="project:///OrderRequestSOAP.gi.wsdl?wsdloperation={http://www.intalio.com/gi/OrderRequestSOAP.gi}Process/initProcess">
+          <wsdl:input message="OrderRequestSOAP:initProcessRequest" name="Order__Request_From_Employee" bpdm:canid="_ncY0EGM_EeWE96vyQ05Dvg" bpdm:senderId="_h-5QoGM_EeWE96vyQ05Dvg" bpdm:receiverId="_NZ5C4mM8EeWE96vyQ05Dvg" bpdm:senderName="OrderRequestSOAP-init request" bpdm:receiverName="Order  Request From Employee" bpdm:receiverPoolId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:dataobjectPointer="project:///OrderRequestSOAP.gi.wsdl?messageForOperation={http://www.intalio.com/gi/OrderRequestSOAP.gi}Process/initProcess/input/initProcessRequest"></wsdl:input>
+          <wsdl:output message="OrderRequestSOAP:initProcessResponse" name="Order__Request_From_EmployeeResponse" bpdm:canid="_oeB3QGM_EeWE96vyQ05Dvg" bpdm:senderId="_NZ5C4mM8EeWE96vyQ05Dvg" bpdm:receiverId="_h-5QoGM_EeWE96vyQ05Dvg" bpdm:senderName="Order  Request From Employee" bpdm:receiverName="OrderRequestSOAP-init request" bpdm:receiverPoolId="_g0L4YGM8EeWE96vyQ05Dvg" bpdm:dataobjectPointer="project:///OrderRequestSOAP.gi.wsdl?messageForOperation={http://www.intalio.com/gi/OrderRequestSOAP.gi}Process/initProcess/output/initProcessResponse"></wsdl:output>
+        </wsdl:operation>
+      </wsdl:portType>
+    </pnlk:role>
+  </pnlk:partnerLinkType>
+  <pnlk:partnerLinkType name="EmployeeAndPoolForPortTypeProcessPlk" bpdm:canPlkId="_g0L4YGM8EeWE96vyQ05Dvg-_NZ5C4GM8EeWE96vyQ05Dvg">
+    <pnlk:role name="Pool_for_Employee" portType="OrderRequestSOAP:Process"></pnlk:role>
+  </pnlk:partnerLinkType>
+  <pnlk:partnerLinkType name="ManagerAndPool" bpdm:poolOneId="_fuLSkGM8EeWE96vyQ05Dvg" bpdm:poolOneIsExecutable="false" bpdm:poolOneName="Manager" bpdm:poolTwoId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:poolTwoIsExecutable="true" bpdm:poolTwoName="Pool">
+    <pnlk:role name="Manager_for_Pool" portType="{http://thisdiagram/Manager}ForPool" bpdm:thisPoolId="_fuLSkGM8EeWE96vyQ05Dvg">
+      <wsdl:portType name="ForPool">
+        <wsdl:operation name="OrderApprovalSOAP-create" bpdm:canid="_01g75mNAEeWE96vyQ05Dvg._RTDFwGM8EeWE96vyQ05Dvg." bpdm:dataobjectPointer="project:///OrderApprovalSOAP.gi.wsdl?wsdloperationbound={http://www.intalio.com/gi/OrderApprovalSOAP.gi}WorkflowSoapService/OrderApprovalSOAPPort/createTask">
+          <wsdl:input message="OrderApprovalSOAP1:createTaskRequest" name="OrderApprovalSOAP-create" bpdm:canid="_7_lV4GNAEeWE96vyQ05Dvg" bpdm:senderId="_RTDFwGM8EeWE96vyQ05Dvg" bpdm:receiverId="_01g75mNAEeWE96vyQ05Dvg" bpdm:senderName="Order Approval From Mananger" bpdm:receiverName="OrderApprovalSOAP-create" bpdm:receiverPoolId="_fuLSkGM8EeWE96vyQ05Dvg" bpdm:dataobjectPointer="project:///OrderApprovalSOAP.gi.wsdl?messageForBoundOperation={http://www.intalio.com/gi/OrderApprovalSOAP.gi}WorkflowSoapService/OrderApprovalSOAPPort/createTask/input/createTaskRequest" bpdm:plnkTypeKey="WFmagic_01g75mNAEeWE96vyQ05Dvg" bpdm:plnkVarKey="WFmagic_01g75mNAEeWE96vyQ05Dvg"></wsdl:input>
+          <wsdl:output message="OrderApprovalSOAP1:createTaskResponse" name="OrderApprovalSOAP-createResponse" bpdm:canid="_89JKUGNAEeWE96vyQ05Dvg" bpdm:senderId="_01g75mNAEeWE96vyQ05Dvg" bpdm:receiverId="_RTDFwGM8EeWE96vyQ05Dvg" bpdm:senderName="OrderApprovalSOAP-create" bpdm:receiverName="Order Approval From Mananger" bpdm:receiverPoolId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:dataobjectPointer="project:///OrderApprovalSOAP.gi.wsdl?messageForBoundOperation={http://www.intalio.com/gi/OrderApprovalSOAP.gi}WorkflowSoapService/OrderApprovalSOAPPort/createTask/output/createTaskResponse" bpdm:plnkTypeKey="WFmagic_01g75mNAEeWE96vyQ05Dvg" bpdm:plnkVarKey="WFmagic_01g75mNAEeWE96vyQ05Dvg"></wsdl:output>
+        </wsdl:operation>
+      </wsdl:portType>
+    </pnlk:role>
+    <pnlk:role name="Pool_for_Manager" portType="Pool:ForManager" bpdm:thisPoolId="_NZ5C4GM8EeWE96vyQ05Dvg">
+      <wsdl:portType name="ForManager">
+        <wsdl:operation name="Order__Requested_Results" bpdm:canid="_01g752NAEeWE96vyQ05Dvg._Rv5Z0GM8EeWE96vyQ05Dvg." bpdm:dataobjectPointer="project:///OrderApprovalSOAP.gi.wsdl?wsdloperation={http://www.intalio.com/gi/OrderApprovalSOAP.gi}Process/notifyTaskCompletion">
+          <wsdl:input message="OrderApprovalSOAP1:notifyTaskCompletionRequest" name="Order__Requested_Results" bpdm:canid="_D9eZgGNBEeWE96vyQ05Dvg" bpdm:senderId="_01g752NAEeWE96vyQ05Dvg" bpdm:receiverId="_Rv5Z0GM8EeWE96vyQ05Dvg" bpdm:senderName="OrderApprovalSOAP-complete" bpdm:receiverName="Order  Requested Results" bpdm:receiverPoolId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:dataobjectPointer="project:///OrderApprovalSOAP.gi.wsdl?messageForOperation={http://www.intalio.com/gi/OrderApprovalSOAP.gi}Process/notifyTaskCompletion/input/notifyTaskCompletionRequest" bpdm:plnkTypeKey="WFmagic_01g75mNAEeWE96vyQ05Dvg" bpdm:plnkVarKey="WFmagic_01g75mNAEeWE96vyQ05Dvg"></wsdl:input>
+          <wsdl:output message="OrderApprovalSOAP1:notifyTaskCompletionResponse" name="Order__Requested_ResultsResponse" bpdm:canid="_GHahgGNBEeWE96vyQ05Dvg" bpdm:senderId="_Rv5Z0GM8EeWE96vyQ05Dvg" bpdm:receiverId="_01g752NAEeWE96vyQ05Dvg" bpdm:senderName="Order  Requested Results" bpdm:receiverName="OrderApprovalSOAP-complete" bpdm:receiverPoolId="_fuLSkGM8EeWE96vyQ05Dvg" bpdm:dataobjectPointer="project:///OrderApprovalSOAP.gi.wsdl?messageForOperation={http://www.intalio.com/gi/OrderApprovalSOAP.gi}Process/notifyTaskCompletion/output/notifyTaskCompletionResponse" bpdm:plnkTypeKey="WFmagic_01g75mNAEeWE96vyQ05Dvg" bpdm:plnkVarKey="WFmagic_01g75mNAEeWE96vyQ05Dvg"></wsdl:output>
+        </wsdl:operation>
+      </wsdl:portType>
+    </pnlk:role>
+  </pnlk:partnerLinkType>
+  <pnlk:partnerLinkType name="WFmagic_01g75mNAEeWE96vyQ05Dvg" bpdm:canPlkId="_fuLSkGM8EeWE96vyQ05Dvg-_NZ5C4GM8EeWE96vyQ05Dvg">
+    <pnlk:role name="Manager_for_PoolForOrderApprovalSOAPPort" portType="OrderApprovalSOAP1:Workflow"></pnlk:role>
+    <pnlk:role name="Pool_for_ManagerForThePortTypeProcess" portType="OrderApprovalSOAP1:Process"></pnlk:role>
+  </pnlk:partnerLinkType>
+  <pnlk:partnerLinkType name="sAndPool" bpdm:poolOneId="_hVAtgGM8EeWE96vyQ05Dvg" bpdm:poolOneIsExecutable="false" bpdm:poolOneName="s" bpdm:poolTwoId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:poolTwoIsExecutable="true" bpdm:poolTwoName="Pool">
+    <pnlk:role name="s_for_Pool" portType="s:ForPool" bpdm:thisPoolId="_hVAtgGM8EeWE96vyQ05Dvg">
+      <wsdl:portType name="ForPool">
+        <wsdl:operation name="multiply" bpdm:canid="_ADRlFmNSEeWE96vyQ05Dvg._PG92cGNBEeWE96vyQ05Dvg." bpdm:dataobjectPointer="project:///calculator.wsdl?wsdloperationbound={http://www.parasoft.com/wsdl/calculator/}Calculator/ICalculator/multiply">
+          <wsdl:input message="tns:multiply2In" name="multiply" bpdm:canid="_A9ZD8GNSEeWE96vyQ05Dvg" bpdm:senderId="_PG92cGNBEeWE96vyQ05Dvg" bpdm:receiverId="_ADRlFmNSEeWE96vyQ05Dvg" bpdm:senderName="Calculator " bpdm:receiverName="multiply" bpdm:receiverPoolId="_hVAtgGM8EeWE96vyQ05Dvg" bpdm:dataobjectPointer="project:///calculator.wsdl?messageForBoundOperation={http://www.parasoft.com/wsdl/calculator/}Calculator/ICalculator/multiply/input/multiply2In"></wsdl:input>
+          <wsdl:output message="tns:multiply2Out" name="multiplyResponse" bpdm:canid="_BZtMgGNSEeWE96vyQ05Dvg" bpdm:senderId="_ADRlFmNSEeWE96vyQ05Dvg" bpdm:receiverId="_PG92cGNBEeWE96vyQ05Dvg" bpdm:senderName="multiply" bpdm:receiverName="Calculator " bpdm:receiverPoolId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:dataobjectPointer="project:///calculator.wsdl?messageForBoundOperation={http://www.parasoft.com/wsdl/calculator/}Calculator/ICalculator/multiply/output/multiply2Out"></wsdl:output>
+        </wsdl:operation>
+      </wsdl:portType>
+    </pnlk:role>
+  </pnlk:partnerLinkType>
+  <pnlk:partnerLinkType name="sAndPoolForPortICalculatorPlk" bpdm:canPlkId="_hVAtgGM8EeWE96vyQ05Dvg-_NZ5C4GM8EeWE96vyQ05Dvg">
+    <pnlk:role name="s_for_Pool" portType="tns:ICalculator"></pnlk:role>
+  </pnlk:partnerLinkType>
+</wsdl:definitions>

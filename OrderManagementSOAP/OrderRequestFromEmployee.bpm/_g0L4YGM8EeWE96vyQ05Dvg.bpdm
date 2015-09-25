@@ -1,0 +1,35 @@
+﻿<bpel:process xmlns:bpdm="http://www.intalio/designer/business-process-data-modeling" xmlns:mapper="http://www.intalio.com/designer/mapper" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attachments="http://www.intalio.com/gi/OrderRequestSOAP.gi/attachments" xmlns:Pool="http://thisdiagram/Pool" xmlns:OrderRequestSOAP="http://www.intalio.com/gi/OrderRequestSOAP.gi" xmlns:diag="http://thisdiagram" xmlns:this="http://thisdiagram/Employee" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:pnlk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ode="http://www.apache.org/ode/type/extension" targetNamespace="http://thisdiagram/Employee">
+    <bpdm:dependencies version="6000089">
+        <bpdm:namespaceDefinition bpdm:uri="http://www.w3.org/2001/XMLSchema" bpdm:prefix="xs"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.w3.org/2001/XMLSchema-instance" bpdm:prefix="xsi"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.intalio.com/gi/OrderRequestSOAP.gi/attachments" bpdm:prefix="attachments" bpdm:comment="contrib=&apos;project:///OrderRequestSOAP.gi.wsdl"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://thisdiagram/Pool" bpdm:prefix="Pool" bpdm:comment="contrib=&apos;partner-pool:///_NZ5C4GM8EeWE96vyQ05Dvg"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.intalio.com/gi/OrderRequestSOAP.gi" bpdm:prefix="OrderRequestSOAP" bpdm:comment="contrib=&apos;project:///OrderRequestSOAP.gi.wsdl"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://thisdiagram" bpdm:prefix="diag" bpdm:comment="contrib=&apos;partner-pool:///_NZ5C4GM8EeWE96vyQ05Dvg"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://thisdiagram/Employee" bpdm:prefix="this" bpdm:type="this_process"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.w3.org/XML/1998/namespace" bpdm:prefix="xml"></bpdm:namespaceDefinition>
+        <bpdm:namespaceContributor bpdm:url="thisprocess://this-process-types" bpdm:label="process defined this-process-types"></bpdm:namespaceContributor>
+        <bpdm:namespaceContributor bpdm:url="partner-pool:///_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:label="Pool"/>
+        <bpdm:namespaceContributor bpdm:url="project:///OrderRequestSOAP.gi.wsdl"/>
+        <bpdm:namespaceContributor bpdm:url="project:///OrderRequestSOAP.gi/IntalioInternal/FormModel.xsd"/>
+    </bpdm:dependencies>
+    <bpel:scope bpdm:label="Employee" bpdm:ID="_g0L4YGM8EeWE96vyQ05Dvg">
+        <bpel:partnerLinks>
+            <bpel:partnerLink name="employeeAndPoolForPortTypeProcessPlkVar" partnerLinkType="diag:EmployeeAndPoolForPortTypeProcessPlk" initializePartnerRole="yes" partnerRole="Pool_for_Employee" bpdm:invokedService="Pool:EmployeeAndPoolForPortTypeProcessPlkService" bpdm:invokedPort="Pool_for_EmployeePort" bpdm:invokedSOAPAddress="${deploy_serverUrl}${deploy_baseSoapServicesUrl}/${deploy_bundleNcName}/${diagram_relativeURL}/Pool/Employee/EmployeeAndPoolForPortTypeProcessPlk" bpdm:invokedIsDefault="true" bpdm:clientTasks="_g0L4YGM8EeWE96vyQ05Dvg:_h-5QoGM_EeWE96vyQ05Dvg" bpdm:isManaged="true" bpdm:otherPoolId="_NZ5C4GM8EeWE96vyQ05Dvg"/>
+        </bpel:partnerLinks>
+        <bpel:variables>
+            <bpel:variable name="orderRequestSOAPInitProcessRequestMsg" messageType="OrderRequestSOAP:initProcessRequest" bpdm:id="_ndPvsGM_EeWE96vyQ05Dvg" bpdm:messageIds=" out:_ncY0EGM_EeWE96vyQ05Dvg">
+                <bpel:from bpdm:toPart="root">
+                    <bpel:literal bpdm:linkedMessageType="OrderRequestSOAP:initProcessRequest" bpdm:linkedPart="root"></bpel:literal>
+                </bpel:from>
+            </bpel:variable>
+            <bpel:variable name="orderRequestSOAPInitProcessResponseMsg" messageType="OrderRequestSOAP:initProcessResponse" bpdm:id="_oe1vmGM_EeWE96vyQ05Dvg" bpdm:messageIds="inc:_oeB3QGM_EeWE96vyQ05Dvg"/>
+        </bpel:variables>
+        <bpel:sequence>
+            <bpdm:messagingtask operation="initProcess" partnerLink="employeeAndPoolForPortTypeProcessPlkVar" portType="OrderRequestSOAP:Process" isMyRole="false" enableSharing="false" bpdm:label="OrderRequestSOAP-init request" bpdm:ID="_h-5QoGM_EeWE96vyQ05Dvg">
+                <bpdm:linkset bpdm:type="outgoingMessage" bpdm:bpeltype="invoke-request" bpdm:messageVariable="orderRequestSOAPInitProcessRequestMsg" bpdm:msgVarScopeId="_g0L4YGM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="OrderRequestSOAP:initProcessRequest" bpdm:ID="_ncY0EGM_EeWE96vyQ05Dvg"></bpdm:linkset>
+                <bpdm:linkset bpdm:type="incomingMessage" bpdm:bpeltype="invoke-receive" bpdm:messageVariable="orderRequestSOAPInitProcessResponseMsg" bpdm:msgVarScopeId="_g0L4YGM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="OrderRequestSOAP:initProcessResponse" bpdm:ID="_oeB3QGM_EeWE96vyQ05Dvg"></bpdm:linkset>
+            </bpdm:messagingtask>
+        </bpel:sequence>
+    </bpel:scope>
+</bpel:process>

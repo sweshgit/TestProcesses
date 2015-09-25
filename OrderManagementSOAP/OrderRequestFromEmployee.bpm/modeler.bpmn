@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:BpmnDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bpmn="http://stp.eclipse.org/bpmn" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_NYxBgWM8EeWE96vyQ05Dvg" iD="_NYxBgGM8EeWE96vyQ05Dvg">
+  <pools xmi:type="bpmn:Pool" xmi:id="_NZ5C4WM8EeWE96vyQ05Dvg" iD="_NZ5C4GM8EeWE96vyQ05Dvg" name="Pool">
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_ndhcgWM_EeWE96vyQ05Dvg" iD="_ndhcgGM_EeWE96vyQ05Dvg" name="orderRequestSOAPInitProcessRequestMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ndhcgmM_EeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ndhcg2M_EeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ndlG4mM_EeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderRequestSOAPInitProcessRequestMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ndp_YGM_EeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderRequestSOAP.gi}initProcessRequest"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_ndm8EGM_EeWE96vyQ05Dvg" direction="From">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ndoKMGM_EeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ndpYUGM_EeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="incomingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_oesloWM_EeWE96vyQ05Dvg" iD="_oesloGM_EeWE96vyQ05Dvg" name="orderRequestSOAPInitProcessResponseMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeslomM_EeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oeslo2M_EeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oexeImM_EeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderRequestSOAPInitProcessResponseMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oe1vkmM_EeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderRequestSOAP.gi}initProcessResponse"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_oezTUGM_EeWE96vyQ05Dvg" direction="To">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oe1vkGM_EeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oe1vkWM_EeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="outgoingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_7_-XcWNAEeWE96vyQ05Dvg" iD="_7_-XcGNAEeWE96vyQ05Dvg" name="orderApprovalSOAP1CreateTaskRequestMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7_-XcmNAEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7_-Xc2NAEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7_-XfGNAEeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderApprovalSOAP1CreateTaskRequestMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ALy0GNAEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderApprovalSOAP.gi}createTaskRequest"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_7_-XfWNAEeWE96vyQ05Dvg" direction="To">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8AIvgGNAEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ALLwGNAEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="outgoingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_8-E-cWNAEeWE96vyQ05Dvg" iD="_8-E-cGNAEeWE96vyQ05Dvg" name="orderApprovalSOAP1CreateTaskResponseMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-E-cmNAEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8-E-c2NAEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8-MTMmNAEeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderApprovalSOAP1CreateTaskResponseMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8-ZukGNAEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderApprovalSOAP.gi}createTaskResponse"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_8-NhUGNAEeWE96vyQ05Dvg" direction="From">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-NhUWNAEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8-ZHgGNAEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="incomingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_D-lz0WNBEeWE96vyQ05Dvg" iD="_D-lz0GNBEeWE96vyQ05Dvg" name="orderApprovalSOAP1NotifyTaskCompletionRequestMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D-lz0mNBEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D-lz02NBEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D-1rcmNBEeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderApprovalSOAP1NotifyTaskCompletionRequestMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D_GxMWNBEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderApprovalSOAP.gi}notifyTaskCompletionRequest"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_D-7yEGNBEeWE96vyQ05Dvg" direction="From">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D_CfwGNBEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D_GxMGNBEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="incomingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_GII6QWNBEeWE96vyQ05Dvg" iD="_GII6QGNBEeWE96vyQ05Dvg" name="orderApprovalSOAP1NotifyTaskCompletionResponseMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GII6QmNBEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GIJhUGNBEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GIT5YWNBEeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderApprovalSOAP1NotifyTaskCompletionResponseMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GIffkWNBEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderApprovalSOAP.gi}notifyTaskCompletionResponse"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_GIYK0GNBEeWE96vyQ05Dvg" direction="To">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GIccQGNBEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GIffkGNBEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="outgoingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_A9r-6mNSEeWE96vyQ05Dvg" iD="_A9r-6WNSEeWE96vyQ05Dvg" name="TotalCalculatedValueSoap">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A9r-62NSEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9r-7GNSEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A91v6GNSEeWE96vyQ05Dvg" key="defaultDeclarationName" value="TotalCalculatedValueSoap"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9-50WNSEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.parasoft.com/wsdl/calculator/}multiply2In"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_A91v6WNSEeWE96vyQ05Dvg" direction="To">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A91v6mNSEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9-50GNSEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="outgoingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_BaTCZ2NSEeWE96vyQ05Dvg" iD="_BaTCZmNSEeWE96vyQ05Dvg" name="CalculatedResult">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BaTCaGNSEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BaTCaWNSEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BaczaGNSEeWE96vyQ05Dvg" key="defaultDeclarationName" value="CalculatedResult"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bal9UmNSEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.parasoft.com/wsdl/calculator/}multiply2Out"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_BaczaWNSEeWE96vyQ05Dvg" direction="From">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bal9UGNSEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bal9UWNSEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="incomingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_NZ5C42M8EeWE96vyQ05Dvg" iD="_NZ5C4mM8EeWE96vyQ05Dvg" associations="_ndm8EGM_EeWE96vyQ05Dvg _oezTUGM_EeWE96vyQ05Dvg" outgoingEdges="_PHHAaGNBEeWE96vyQ05Dvg" name="Order  Request From Employee" activityType="Task">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_ncY0EWM_EeWE96vyQ05Dvg"/>
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_oeB3QWM_EeWE96vyQ05Dvg"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_RTDFwWM8EeWE96vyQ05Dvg" iD="_RTDFwGM8EeWE96vyQ05Dvg" associations="_7_-XfWNAEeWE96vyQ05Dvg _8-NhUGNAEeWE96vyQ05Dvg" outgoingEdges="_Lq4G4WM9EeWE96vyQ05Dvg" incomingEdges="_JcSvcWM9EeWE96vyQ05Dvg" name="Order Approval From Mananger">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_7_lV4WNAEeWE96vyQ05Dvg"/>
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_89JKUWNAEeWE96vyQ05Dvg"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_Rv5Z0WM8EeWE96vyQ05Dvg" iD="_Rv5Z0GM8EeWE96vyQ05Dvg" associations="_D-7yEGNBEeWE96vyQ05Dvg _GIYK0GNBEeWE96vyQ05Dvg" outgoingEdges="_QF5gsWM9EeWE96vyQ05Dvg" incomingEdges="_Lq4G4WM9EeWE96vyQ05Dvg" name="Order  Requested Results">
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_D9eZgWNBEeWE96vyQ05Dvg"/>
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_GHahgWNBEeWE96vyQ05Dvg"/>
+    </vertices>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_tDyBwWM8EeWE96vyQ05Dvg" iD="_tDyBwGM8EeWE96vyQ05Dvg" incomingEdges="_QyEqMGM9EeWE96vyQ05Dvg" name="End of the Event" activityType="EventEndEmpty"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_2sTbMWM8EeWE96vyQ05Dvg" iD="_2sTbMGM8EeWE96vyQ05Dvg" outgoingEdges="_JcSvcWM9EeWE96vyQ05Dvg _KjzKEWM9EeWE96vyQ05Dvg" incomingEdges="_ZEGN8WNBEeWE96vyQ05Dvg" name="more than 1000" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_6rTAUWM8EeWE96vyQ05Dvg" iD="_6rTAUGM8EeWE96vyQ05Dvg" outgoingEdges="_QyEqMGM9EeWE96vyQ05Dvg" incomingEdges="_KjzKEWM9EeWE96vyQ05Dvg _QF5gsWM9EeWE96vyQ05Dvg" name="Final Status" activityType="GatewayDataBasedExclusive"/>
+    <vertices xmi:type="bpmn:Activity" xmi:id="_PG92cWNBEeWE96vyQ05Dvg" iD="_PG92cGNBEeWE96vyQ05Dvg" associations="_A91v6WNSEeWE96vyQ05Dvg _BaczaWNSEeWE96vyQ05Dvg" outgoingEdges="_ZEGN8WNBEeWE96vyQ05Dvg" incomingEdges="_PHHAaGNBEeWE96vyQ05Dvg" name="Calculator " activityType="Task" looping="false">
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_A9ZD8WNSEeWE96vyQ05Dvg"/>
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_BZtMgWNSEeWE96vyQ05Dvg"/>
+    </vertices>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_JcSvcWM9EeWE96vyQ05Dvg" iD="_JcSvcGM9EeWE96vyQ05Dvg" name="Yes"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_KjzKEWM9EeWE96vyQ05Dvg" iD="_KjzKEGM9EeWE96vyQ05Dvg" name="No" conditionType="Default" isDefault="true"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_Lq4G4WM9EeWE96vyQ05Dvg" iD="_Lq4G4GM9EeWE96vyQ05Dvg"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_QF5gsWM9EeWE96vyQ05Dvg" iD="_QF5gsGM9EeWE96vyQ05Dvg"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_QyEqMGM9EeWE96vyQ05Dvg" iD="_QyEDIGM9EeWE96vyQ05Dvg"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_PHHAaGNBEeWE96vyQ05Dvg" iD="_PHHAZ2NBEeWE96vyQ05Dvg"/>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_ZEGN8WNBEeWE96vyQ05Dvg" iD="_ZEGN8GNBEeWE96vyQ05Dvg"/>
+  </pools>
+  <pools xmi:type="bpmn:Pool" xmi:id="_fuLSkWM8EeWE96vyQ05Dvg" iD="_fuLSkGM8EeWE96vyQ05Dvg" name="Manager">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k-OP4GM8EeWE96vyQ05Dvg" source="executablepool">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k-OP4WM8EeWE96vyQ05Dvg" key="poolIsExecutable" value="false"/>
+    </eAnnotations>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_8AOPEGNAEeWE96vyQ05Dvg" iD="_8ANoBWNAEeWE96vyQ05Dvg" name="orderApprovalSOAPCreateTaskRequestMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8AOPEWNAEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8AOPEmNAEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ARSYWNAEeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderApprovalSOAPCreateTaskRequestMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8AVj0GNAEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderApprovalSOAP.gi}createTaskRequest"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_8ASggGNAEeWE96vyQ05Dvg" direction="From">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8ATuoGNAEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8AU8wGNAEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="incomingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_89zRoGNAEeWE96vyQ05Dvg" iD="_89yqkGNAEeWE96vyQ05Dvg" name="orderApprovalSOAPCreateTaskResponseMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89zRoWNAEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_89zRomNAEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_893jEmNAEeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderApprovalSOAPCreateTaskResponseMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_89-QwWNAEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderApprovalSOAP.gi}createTaskResponse"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_895_UGNAEeWE96vyQ05Dvg" direction="To">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_898bkGNAEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_89-QwGNAEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="outgoingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_D-Ig0WNBEeWE96vyQ05Dvg" iD="_D-Ig0GNBEeWE96vyQ05Dvg" name="orderApprovalSOAPNotifyTaskCompletionRequestMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D-JH4GNBEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D-JH4WNBEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D-SR0WNBEeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderApprovalSOAPNotifyTaskCompletionRequestMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D-cp4WNBEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderApprovalSOAP.gi}notifyTaskCompletionRequest"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_D-S44GNBEeWE96vyQ05Dvg" direction="To">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D-S44WNBEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D-cp4GNBEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="outgoingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_GIuJEGNBEeWE96vyQ05Dvg" iD="_GItiAGNBEeWE96vyQ05Dvg" name="orderApprovalSOAPNotifyTaskCompletionResponseMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GIuJEWNBEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GIuJEmNBEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GI2r8WNBEeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderApprovalSOAPNotifyTaskCompletionResponseMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GI-AsmNBEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderApprovalSOAP.gi}notifyTaskCompletionResponse"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_GI6WUGNBEeWE96vyQ05Dvg" direction="From">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GI-AsGNBEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GI-AsWNBEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="incomingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <vertices xmi:type="bpmn:ActivityUser" xmi:id="_01z21GNAEeWE96vyQ05Dvg" iD="_01g75mNAEeWE96vyQ05Dvg" associations="_8ASggGNAEeWE96vyQ05Dvg _895_UGNAEeWE96vyQ05Dvg" outgoingEdges="_016kgGNAEeWE96vyQ05Dvg" name="OrderApprovalSOAP-create" activityType="UserTask">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_01z21WNAEeWE96vyQ05Dvg" source="genericFile">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_01z21mNAEeWE96vyQ05Dvg" key="projectRelativePath" value="OrderApprovalSOAP.gi"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_01z212NAEeWE96vyQ05Dvg" source="humanTask">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_01z22GNAEeWE96vyQ05Dvg" key="factoryId" value="gi"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_01z22WNAEeWE96vyQ05Dvg" key="taskType" value="create-and-complete"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_01z22mNAEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_01z222NAEeWE96vyQ05Dvg" key="partnerLinkTypeKey" value="WFmagic_01g75mNAEeWE96vyQ05Dvg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_01z23GNAEeWE96vyQ05Dvg" key="douri" value="project:///OrderApprovalSOAP.gi.wsdl?wsdloperationbound={http://www.intalio.com/gi/OrderApprovalSOAP.gi}WorkflowSoapService/OrderApprovalSOAPPort/createTask"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8Kfv8GNBEeWE96vyQ05Dvg" source="participant">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8K1uMGNBEeWE96vyQ05Dvg" key="users" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8K9qAGNBEeWE96vyQ05Dvg" key="roles" value="examples\manager"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8LeAUGNBEeWE96vyQ05Dvg" source="pipa">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8LnKQGNBEeWE96vyQ05Dvg" key="description" value="Manager Should give his decision on order request from the employee"/>
+      </eAnnotations>
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_7_lV4WNAEeWE96vyQ05Dvg"/>
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_89JKUWNAEeWE96vyQ05Dvg"/>
+    </vertices>
+    <vertices xmi:type="bpmn:ActivityUser" xmi:id="_013hMGNAEeWE96vyQ05Dvg" iD="_01g752NAEeWE96vyQ05Dvg" associations="_D-S44GNBEeWE96vyQ05Dvg _GI6WUGNBEeWE96vyQ05Dvg" incomingEdges="_016kgGNAEeWE96vyQ05Dvg" name="OrderApprovalSOAP-complete" activityType="UserTask" looping="false">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_013hMWNAEeWE96vyQ05Dvg" source="genericFile">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_013hMmNAEeWE96vyQ05Dvg" key="projectRelativePath" value="OrderApprovalSOAP.gi"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_013hM2NAEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_013hNGNAEeWE96vyQ05Dvg" key="partnerLinkTypeKey" value="WFmagic_01g75mNAEeWE96vyQ05Dvg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_013hNWNAEeWE96vyQ05Dvg" key="douri" value="project:///OrderApprovalSOAP.gi.wsdl?invokerequestresponse={http://www.intalio.com/gi/OrderApprovalSOAP.gi}Process/notifyTaskCompletion"/>
+      </eAnnotations>
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_D9eZgWNBEeWE96vyQ05Dvg"/>
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_GHahgWNBEeWE96vyQ05Dvg"/>
+    </vertices>
+    <sequenceEdges xmi:type="bpmn:SequenceEdge" xmi:id="_016kgGNAEeWE96vyQ05Dvg" iD="_01qF0GNAEeWE96vyQ05Dvg" name=""/>
+  </pools>
+  <pools xmi:type="bpmn:Pool" xmi:id="_g0L4YWM8EeWE96vyQ05Dvg" iD="_g0L4YGM8EeWE96vyQ05Dvg" name="Employee">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_liA5cGM8EeWE96vyQ05Dvg" source="executablepool">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_liA5cWM8EeWE96vyQ05Dvg" key="poolIsExecutable" value="false"/>
+    </eAnnotations>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_ndPvsWM_EeWE96vyQ05Dvg" iD="_ndPvsGM_EeWE96vyQ05Dvg" name="orderRequestSOAPInitProcessRequestMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ndPvsmM_EeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ndPvs2M_EeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ndPvvGM_EeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderRequestSOAPInitProcessRequestMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ndPvwGM_EeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderRequestSOAP.gi}initProcessRequest"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_ndPvvWM_EeWE96vyQ05Dvg" direction="To">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ndPvvmM_EeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ndPvv2M_EeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="outgoingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_oe1vmWM_EeWE96vyQ05Dvg" iD="_oe1vmGM_EeWE96vyQ05Dvg" name="orderRequestSOAPInitProcessResponseMsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oe1vmmM_EeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oe1vm2M_EeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oe_gmGM_EeWE96vyQ05Dvg" key="defaultDeclarationName" value="orderRequestSOAPInitProcessResponseMsg"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oe_gnGM_EeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.intalio.com/gi/OrderRequestSOAP.gi}initProcessResponse"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_oe_gmWM_EeWE96vyQ05Dvg" direction="From">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oe_gmmM_EeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oe_gm2M_EeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="incomingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <vertices xmi:type="bpmn:ActivityUser" xmi:id="_h--wP2M_EeWE96vyQ05Dvg" iD="_h-5QoGM_EeWE96vyQ05Dvg" associations="_ndPvvWM_EeWE96vyQ05Dvg _oe_gmWM_EeWE96vyQ05Dvg" name="OrderRequestSOAP-init request" activityType="UserTask">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h--wQGM_EeWE96vyQ05Dvg" source="genericFile">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h--wQWM_EeWE96vyQ05Dvg" key="projectRelativePath" value="OrderRequestSOAP.gi"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h--wQmM_EeWE96vyQ05Dvg" source="humanTask">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h--wQ2M_EeWE96vyQ05Dvg" key="factoryId" value="gi"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h--wRGM_EeWE96vyQ05Dvg" key="taskType" value="init"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h--wRWM_EeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h--wRmM_EeWE96vyQ05Dvg" key="douri" value="project:///OrderRequestSOAP.gi.wsdl?invokerequestresponse={http://www.intalio.com/gi/OrderRequestSOAP.gi}Process/initProcess"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oMZCwGNBEeWE96vyQ05Dvg" source="participant">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oM2VwGNBEeWE96vyQ05Dvg" key="users" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oM-RkGNBEeWE96vyQ05Dvg" key="roles" value="examples\employee"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qdIWUGNBEeWE96vyQ05Dvg" source="pipa">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qdgw0GNBEeWE96vyQ05Dvg" key="description" value="Employee will place an order "/>
+      </eAnnotations>
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_ncY0EWM_EeWE96vyQ05Dvg"/>
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_oeB3QWM_EeWE96vyQ05Dvg"/>
+    </vertices>
+  </pools>
+  <pools xmi:type="bpmn:Pool" xmi:id="_hVAtgWM8EeWE96vyQ05Dvg" iD="_hVAtgGM8EeWE96vyQ05Dvg" name="s">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l4Ny8GM8EeWE96vyQ05Dvg" source="executablepool">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l4Ny8WM8EeWE96vyQ05Dvg" key="poolIsExecutable" value="false"/>
+    </eAnnotations>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_A9-52GNSEeWE96vyQ05Dvg" iD="_A9-512NSEeWE96vyQ05Dvg" name="TotalCalculatedValueSoap">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A9-52WNSEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9-52mNSEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A-Iq2GNSEeWE96vyQ05Dvg" key="defaultDeclarationName" value="TotalCalculatedValueSoap"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A-Iq3GNSEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.parasoft.com/wsdl/calculator/}multiply2In"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_A-Iq2WNSEeWE96vyQ05Dvg" direction="From">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A-Iq2mNSEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A-Iq22NSEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="incomingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <artifacts xmi:type="bpmn:DataObject" xmi:id="_BaJRYWNSEeWE96vyQ05Dvg" iD="_BaJRYGNSEeWE96vyQ05Dvg" name="CalculatedResult">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BaJRYmNSEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BaJRY2NSEeWE96vyQ05Dvg" key="isBpelDeclaration" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BaJRbGNSEeWE96vyQ05Dvg" key="defaultDeclarationName" value="CalculatedResult"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BaTCYGNSEeWE96vyQ05Dvg" key="douri2" value="builtin:///diagram?wsdlmessage={http://www.parasoft.com/wsdl/calculator/}multiply2Out"/>
+      </eAnnotations>
+      <associations xmi:type="bpmn:Association" xmi:id="_BaJRbWNSEeWE96vyQ05Dvg" direction="To">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BaJRbmNSEeWE96vyQ05Dvg" source="dataObjectAssociationTypeSource">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BaJRb2NSEeWE96vyQ05Dvg" key="dataObjectAssociationTypeValue" value="outgoingMesssageVariable"/>
+        </eAnnotations>
+      </associations>
+    </artifacts>
+    <vertices xmi:type="bpmn:ActivityService" xmi:id="_ADavCWNSEeWE96vyQ05Dvg" iD="_ADRlFmNSEeWE96vyQ05Dvg" associations="_A-Iq2WNSEeWE96vyQ05Dvg _BaJRbWNSEeWE96vyQ05Dvg" name="multiply" activityType="ServiceTask">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ADavCmNSEeWE96vyQ05Dvg" source="attachedDataobject">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ADavC2NSEeWE96vyQ05Dvg" key="douri" value="project:///calculator.wsdl?wsdloperationbound={http://www.parasoft.com/wsdl/calculator/}Calculator/ICalculator/multiply"/>
+      </eAnnotations>
+      <incomingMessages xmi:type="bpmn:MessagingEdge" href="#_A9ZD8WNSEeWE96vyQ05Dvg"/>
+      <outgoingMessages xmi:type="bpmn:MessagingEdge" href="#_BZtMgWNSEeWE96vyQ05Dvg"/>
+    </vertices>
+  </pools>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_ncY0EWM_EeWE96vyQ05Dvg" iD="_ncY0EGM_EeWE96vyQ05Dvg" source="_h--wP2M_EeWE96vyQ05Dvg" target="_NZ5C42M8EeWE96vyQ05Dvg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ncgI0GM_EeWE96vyQ05Dvg" source="attachedDataobject">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ncgI0WM_EeWE96vyQ05Dvg" key="douri" value="project:///OrderRequestSOAP.gi.wsdl?messageForOperation={http://www.intalio.com/gi/OrderRequestSOAP.gi}Process/initProcess/input/initProcessRequest"/>
+    </eAnnotations>
+  </messages>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_oeB3QWM_EeWE96vyQ05Dvg" iD="_oeB3QGM_EeWE96vyQ05Dvg" source="_NZ5C42M8EeWE96vyQ05Dvg" target="_h--wP2M_EeWE96vyQ05Dvg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeMPUGM_EeWE96vyQ05Dvg" source="attachedDataobject">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oeMPUWM_EeWE96vyQ05Dvg" key="douri" value="project:///OrderRequestSOAP.gi.wsdl?messageForOperation={http://www.intalio.com/gi/OrderRequestSOAP.gi}Process/initProcess/output/initProcessResponse"/>
+    </eAnnotations>
+  </messages>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_7_lV4WNAEeWE96vyQ05Dvg" iD="_7_lV4GNAEeWE96vyQ05Dvg" source="_RTDFwWM8EeWE96vyQ05Dvg" target="_01z21GNAEeWE96vyQ05Dvg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7_qOYGNAEeWE96vyQ05Dvg" source="attachedDataobject">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7_qOYWNAEeWE96vyQ05Dvg" key="partnerLinkTypeKey" value="WFmagic_01g75mNAEeWE96vyQ05Dvg"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7_qOYmNAEeWE96vyQ05Dvg" key="douri" value="project:///OrderApprovalSOAP.gi.wsdl?messageForBoundOperation={http://www.intalio.com/gi/OrderApprovalSOAP.gi}WorkflowSoapService/OrderApprovalSOAPPort/createTask/input/createTaskRequest"/>
+    </eAnnotations>
+  </messages>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_89JKUWNAEeWE96vyQ05Dvg" iD="_89JKUGNAEeWE96vyQ05Dvg" source="_01z21GNAEeWE96vyQ05Dvg" target="_RTDFwWM8EeWE96vyQ05Dvg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89TiYGNAEeWE96vyQ05Dvg" source="attachedDataobject">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_89TiYWNAEeWE96vyQ05Dvg" key="partnerLinkTypeKey" value="WFmagic_01g75mNAEeWE96vyQ05Dvg"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_89UJcGNAEeWE96vyQ05Dvg" key="douri" value="project:///OrderApprovalSOAP.gi.wsdl?messageForBoundOperation={http://www.intalio.com/gi/OrderApprovalSOAP.gi}WorkflowSoapService/OrderApprovalSOAPPort/createTask/output/createTaskResponse"/>
+    </eAnnotations>
+  </messages>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_D9eZgWNBEeWE96vyQ05Dvg" iD="_D9eZgGNBEeWE96vyQ05Dvg" source="_013hMGNAEeWE96vyQ05Dvg" target="_Rv5Z0WM8EeWE96vyQ05Dvg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D9j5EGNBEeWE96vyQ05Dvg" source="attachedDataobject">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D9kgIGNBEeWE96vyQ05Dvg" key="partnerLinkTypeKey" value="WFmagic_01g75mNAEeWE96vyQ05Dvg"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D9kgIWNBEeWE96vyQ05Dvg" key="douri" value="project:///OrderApprovalSOAP.gi.wsdl?messageForOperation={http://www.intalio.com/gi/OrderApprovalSOAP.gi}Process/notifyTaskCompletion/input/notifyTaskCompletionRequest"/>
+    </eAnnotations>
+  </messages>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_GHahgWNBEeWE96vyQ05Dvg" iD="_GHahgGNBEeWE96vyQ05Dvg" source="_Rv5Z0WM8EeWE96vyQ05Dvg" target="_013hMGNAEeWE96vyQ05Dvg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GHmuwGNBEeWE96vyQ05Dvg" source="attachedDataobject">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GHmuwWNBEeWE96vyQ05Dvg" key="partnerLinkTypeKey" value="WFmagic_01g75mNAEeWE96vyQ05Dvg"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GHmuwmNBEeWE96vyQ05Dvg" key="douri" value="project:///OrderApprovalSOAP.gi.wsdl?messageForOperation={http://www.intalio.com/gi/OrderApprovalSOAP.gi}Process/notifyTaskCompletion/output/notifyTaskCompletionResponse"/>
+    </eAnnotations>
+  </messages>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_A9ZD8WNSEeWE96vyQ05Dvg" iD="_A9ZD8GNSEeWE96vyQ05Dvg" source="_PG92cWNBEeWE96vyQ05Dvg" target="_ADavCWNSEeWE96vyQ05Dvg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A9ZD8mNSEeWE96vyQ05Dvg" source="attachedDataobject">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A9ZD82NSEeWE96vyQ05Dvg" key="douri" value="project:///calculator.wsdl?messageForBoundOperation={http://www.parasoft.com/wsdl/calculator/}Calculator/ICalculator/multiply/input/multiply2In"/>
+    </eAnnotations>
+  </messages>
+  <messages xmi:type="bpmn:MessagingEdge" xmi:id="_BZtMgWNSEeWE96vyQ05Dvg" iD="_BZtMgGNSEeWE96vyQ05Dvg" source="_ADavCWNSEeWE96vyQ05Dvg" target="_PG92cWNBEeWE96vyQ05Dvg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BZ2WcGNSEeWE96vyQ05Dvg" source="attachedDataobject">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BZ2WcWNSEeWE96vyQ05Dvg" key="douri" value="project:///calculator.wsdl?messageForBoundOperation={http://www.parasoft.com/wsdl/calculator/}Calculator/ICalculator/multiply/output/multiply2Out"/>
+    </eAnnotations>
+  </messages>
+</bpmn:BpmnDiagram>

@@ -1,0 +1,161 @@
+﻿<bpel:process xmlns:bpdm="http://www.intalio/designer/business-process-data-modeling" xmlns:mapper="http://www.intalio.com/designer/mapper" xmlns:OrderApprovalSOAP="http://www.intalio.com/gi/OrderApprovalSOAP.gi/attachments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://thisdiagram/s" xmlns:this="http://thisdiagram/Pool" xmlns:OrderRequestSOAP="http://www.intalio.com/gi/OrderRequestSOAP.gi" xmlns:diag="http://thisdiagram" xmlns:OrderApprovalSOAP1="http://www.intalio.com/gi/OrderApprovalSOAP.gi" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.parasoft.com/wsdl/calculator/" xmlns:attachments="http://www.intalio.com/gi/OrderRequestSOAP.gi/attachments" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:pnlk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ode="http://www.apache.org/ode/type/extension" targetNamespace="http://thisdiagram/Pool">
+    <bpdm:dependencies version="6000089">
+        <bpdm:namespaceDefinition bpdm:uri="http://www.intalio.com/gi/OrderApprovalSOAP.gi/attachments" bpdm:prefix="OrderApprovalSOAP" bpdm:comment="contrib=&apos;project:///OrderApprovalSOAP.gi.wsdl"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.w3.org/2001/XMLSchema-instance" bpdm:prefix="xsi"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://thisdiagram/s" bpdm:prefix="s" bpdm:comment="contrib=&apos;partner-pool:///_hVAtgGM8EeWE96vyQ05Dvg"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://thisdiagram/Pool" bpdm:prefix="this" bpdm:type="this_process"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.intalio.com/gi/OrderRequestSOAP.gi" bpdm:prefix="OrderRequestSOAP" bpdm:comment="contrib=&apos;project:///OrderRequestSOAP.gi.wsdl"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://thisdiagram" bpdm:prefix="diag" bpdm:comment="contrib=&apos;partner-pool:///_g0L4YGM8EeWE96vyQ05Dvg"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.intalio.com/gi/OrderApprovalSOAP.gi" bpdm:prefix="OrderApprovalSOAP1" bpdm:comment="contrib=&apos;project:///OrderApprovalSOAP.gi.wsdl"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.w3.org/2001/XMLSchema" bpdm:prefix="xs"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.parasoft.com/wsdl/calculator/" bpdm:prefix="tns" bpdm:comment="contrib=&apos;project:///calculator.wsdl"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.intalio.com/gi/OrderRequestSOAP.gi/attachments" bpdm:prefix="attachments" bpdm:comment="contrib=&apos;project:///OrderRequestSOAP.gi.wsdl"></bpdm:namespaceDefinition>
+        <bpdm:namespaceDefinition bpdm:uri="http://www.w3.org/XML/1998/namespace" bpdm:prefix="xml"></bpdm:namespaceDefinition>
+        <bpdm:namespaceContributor bpdm:url="thisprocess://this-process-types" bpdm:label="process defined this-process-types">
+            <wsdl:service name="EmployeeAndPoolForPortTypeProcessPlkService">
+                <wsdl:port name="Pool_for_EmployeePort" binding="this:EmployeeAndPoolForPortTypeProcessPlkServiceBinding">
+                    <address location="${deploy_serverUrl}${deploy_baseSoapServicesUrl}/${deploy_bundleNcName}/${diagram_relativeURL}/Pool/Employee/EmployeeAndPoolForPortTypeProcessPlk"/>
+                </wsdl:port>
+            </wsdl:service>
+            <bpel:binding name="EmployeeAndPoolForPortTypeProcessPlkServiceBinding" type="OrderRequestSOAP:Process" bpdm:isSynchronized="true"/>
+            <wsdl:service name="WFmagic_01g75mNAEeWE96vyQ05DvgService">
+                <wsdl:port name="Pool_for_ManagerForThePortTypeProcessPort" binding="this:WFmagic_01g75mNAEeWE96vyQ05DvgServiceBinding">
+                    <address location="${deploy_serverUrl}${deploy_baseSoapServicesUrl}/${deploy_bundleNcName}/${diagram_relativeURL}/Pool/Manager/WFmagic_01g75mNAEeWE96vyQ05Dvg"/>
+                </wsdl:port>
+            </wsdl:service>
+            <bpel:binding name="WFmagic_01g75mNAEeWE96vyQ05DvgServiceBinding" type="OrderApprovalSOAP1:Process" bpdm:isSynchronized="true"/>
+        </bpdm:namespaceContributor>
+        <bpdm:namespaceContributor bpdm:url="partner-pool:///_g0L4YGM8EeWE96vyQ05Dvg" bpdm:label="Employee"/>
+        <bpdm:namespaceContributor bpdm:url="project:///OrderRequestSOAP.gi.wsdl"/>
+        <bpdm:namespaceContributor bpdm:url="project:///OrderRequestSOAP.gi/IntalioInternal/FormModel.xsd"/>
+        <bpdm:namespaceContributor bpdm:url="partner-pool:///_fuLSkGM8EeWE96vyQ05Dvg" bpdm:label="Manager"/>
+        <bpdm:namespaceContributor bpdm:url="project:///OrderApprovalSOAP.gi.wsdl"/>
+        <bpdm:namespaceContributor bpdm:url="project:///OrderApprovalSOAP.gi/IntalioInternal/FormModel.xsd"/>
+        <bpdm:namespaceContributor bpdm:url="partner-pool:///_hVAtgGM8EeWE96vyQ05Dvg" bpdm:label="s"/>
+        <bpdm:namespaceContributor bpdm:url="project:///calculator.wsdl"/>
+    </bpdm:dependencies>
+    <bpel:scope bpdm:label="Pool" bpdm:ID="_NZ5C4GM8EeWE96vyQ05Dvg">
+        <bpel:partnerLinks>
+            <bpel:partnerLink name="employeeAndPoolForPortTypeProcessPlkVar" partnerLinkType="diag:EmployeeAndPoolForPortTypeProcessPlk" myRole="Pool_for_Employee" bpdm:enableSharing="false" bpdm:providedService="this:EmployeeAndPoolForPortTypeProcessPlkService" bpdm:providedPort="Pool_for_EmployeePort" bpdm:provideSOAPAddress="${deploy_serverUrl}${deploy_baseSoapServicesUrl}/${deploy_bundleNcName}/${diagram_relativeURL}/Pool/Employee/EmployeeAndPoolForPortTypeProcessPlk" bpdm:providedIsDefault="true" bpdm:clientTasks="_NZ5C4GM8EeWE96vyQ05Dvg:_NZ5C4mM8EeWE96vyQ05Dvg" bpdm:isManaged="true" bpdm:otherPoolId="_g0L4YGM8EeWE96vyQ05Dvg"/>
+            <bpel:partnerLink name="wFmagic_01g75mNAEeWE96vyQ05DvgPlkVar" partnerLinkType="diag:WFmagic_01g75mNAEeWE96vyQ05Dvg" initializePartnerRole="no" myRole="Pool_for_ManagerForThePortTypeProcess" bpdm:enableSharing="false" bpdm:providedService="this:WFmagic_01g75mNAEeWE96vyQ05DvgService" bpdm:providedPort="Pool_for_ManagerForThePortTypeProcessPort" bpdm:provideSOAPAddress="${deploy_serverUrl}${deploy_baseSoapServicesUrl}/${deploy_bundleNcName}/${diagram_relativeURL}/Pool/Manager/WFmagic_01g75mNAEeWE96vyQ05Dvg" bpdm:providedIsDefault="true" partnerRole="Manager_for_PoolForOrderApprovalSOAPPort" bpdm:invokedService="OrderApprovalSOAP1:WorkflowSoapService" bpdm:invokedPort="OrderApprovalSOAPPort" bpdm:invokedSOAPAddress="http://localhost:8080/fds/workflow/OrderApprovalSOAP" bpdm:invokedIsDefault="true" bpdm:clientTasks="_NZ5C4GM8EeWE96vyQ05Dvg:_RTDFwGM8EeWE96vyQ05Dvg, _NZ5C4GM8EeWE96vyQ05Dvg:_Rv5Z0GM8EeWE96vyQ05Dvg" bpdm:isManaged="true" bpdm:otherPoolId="_fuLSkGM8EeWE96vyQ05Dvg"/>
+            <bpel:partnerLink name="sAndPoolForPortICalculatorPlkVar" partnerLinkType="diag:sAndPoolForPortICalculatorPlk" initializePartnerRole="yes" partnerRole="s_for_Pool" bpdm:invokedService="tns:Calculator" bpdm:invokedPort="ICalculator" bpdm:invokedSOAPAddress="http://ws1.parasoft.com/glue/calculator" bpdm:invokedIsDefault="true" bpdm:clientTasks="_NZ5C4GM8EeWE96vyQ05Dvg:_PG92cGNBEeWE96vyQ05Dvg" bpdm:isManaged="true" bpdm:otherPoolId="_hVAtgGM8EeWE96vyQ05Dvg"/>
+        </bpel:partnerLinks>
+        <bpel:variables>
+            <bpel:variable name="orderRequestSOAPInitProcessRequestMsg" messageType="OrderRequestSOAP:initProcessRequest" bpdm:id="_ndhcgGM_EeWE96vyQ05Dvg" bpdm:messageIds="inc:_ncY0EGM_EeWE96vyQ05Dvg"/>
+            <bpel:variable name="orderRequestSOAPInitProcessResponseMsg" messageType="OrderRequestSOAP:initProcessResponse" bpdm:id="_oesloGM_EeWE96vyQ05Dvg" bpdm:messageIds=" out:_oeB3QGM_EeWE96vyQ05Dvg">
+                <bpel:from bpdm:toPart="root">
+                    <bpel:literal bpdm:linkedMessageType="OrderRequestSOAP:initProcessResponse" bpdm:linkedPart="root"></bpel:literal>
+                </bpel:from>
+            </bpel:variable>
+            <bpel:variable name="orderApprovalSOAP1CreateTaskRequestMsg" messageType="OrderApprovalSOAP1:createTaskRequest" binding="OrderApprovalSOAP1:WorkflowSoapBinding" operation="createTask" opMsgType="0" bpdm:id="_7_-XcGNAEeWE96vyQ05Dvg" bpdm:messageIds=" out:_7_lV4GNAEeWE96vyQ05Dvg">
+                <bpel:from bpdm:toPart="root">
+                    <bpel:literal bpdm:linkedMessageType="OrderApprovalSOAP1:createTaskRequest" bpdm:linkedPart="root" bpdm:binding="OrderApprovalSOAP1:WorkflowSoapBinding" bpdm:opMsgType="0" bpdm:operation="createTask"></bpel:literal>
+                </bpel:from>
+            </bpel:variable>
+            <bpel:variable name="orderApprovalSOAP1CreateTaskResponseMsg" messageType="OrderApprovalSOAP1:createTaskResponse" binding="OrderApprovalSOAP1:WorkflowSoapBinding" operation="createTask" opMsgType="1" bpdm:id="_8-E-cGNAEeWE96vyQ05Dvg" bpdm:messageIds="inc:_89JKUGNAEeWE96vyQ05Dvg"/>
+            <bpel:variable name="orderApprovalSOAP1NotifyTaskCompletionRequestMsg" messageType="OrderApprovalSOAP1:notifyTaskCompletionRequest" bpdm:id="_D-lz0GNBEeWE96vyQ05Dvg" bpdm:messageIds="inc:_D9eZgGNBEeWE96vyQ05Dvg"/>
+            <bpel:variable name="orderApprovalSOAP1NotifyTaskCompletionResponseMsg" messageType="OrderApprovalSOAP1:notifyTaskCompletionResponse" bpdm:id="_GII6QGNBEeWE96vyQ05Dvg" bpdm:messageIds=" out:_GHahgGNBEeWE96vyQ05Dvg">
+                <bpel:from bpdm:toPart="root">
+                    <bpel:literal bpdm:linkedMessageType="OrderApprovalSOAP1:notifyTaskCompletionResponse" bpdm:linkedPart="root"></bpel:literal>
+                </bpel:from>
+            </bpel:variable>
+            <bpel:variable name="TotalCalculatedValueSoap" messageType="tns:multiply2In" binding="tns:ICalculator" operation="multiply" opMsgType="0" bpdm:id="_A9r-6WNSEeWE96vyQ05Dvg" bpdm:messageIds=" out:_A9ZD8GNSEeWE96vyQ05Dvg">
+                <bpel:from bpdm:toPart="parameters">
+                    <bpel:literal bpdm:linkedMessageType="tns:multiply2In" bpdm:linkedPart="parameters" bpdm:binding="tns:ICalculator" bpdm:opMsgType="0" bpdm:operation="multiply"></bpel:literal>
+                </bpel:from>
+            </bpel:variable>
+            <bpel:variable name="CalculatedResult" messageType="tns:multiply2Out" binding="tns:ICalculator" operation="multiply" opMsgType="1" bpdm:id="_BaTCZmNSEeWE96vyQ05Dvg" bpdm:messageIds="inc:_BZtMgGNSEeWE96vyQ05Dvg"/>
+        </bpel:variables>
+        <bpel:sequence>
+            <bpdm:messagingtask operation="initProcess" partnerLink="employeeAndPoolForPortTypeProcessPlkVar" portType="OrderRequestSOAP:Process" isMyRole="true" enableSharing="false" bpdm:label="Order  Request From Employee" bpdm:ID="_NZ5C4mM8EeWE96vyQ05Dvg">
+                <bpdm:linkset bpdm:type="incomingMessage" bpdm:bpeltype="receive" bpdm:messageVariable="orderRequestSOAPInitProcessRequestMsg" bpdm:msgVarScopeId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="OrderRequestSOAP:initProcessRequest" bpdm:ID="_ncY0EGM_EeWE96vyQ05Dvg"></bpdm:linkset>
+                <bpdm:linkset bpdm:type="outgoingMessage" bpdm:bpeltype="reply" bpdm:messageVariable="orderRequestSOAPInitProcessResponseMsg" bpdm:msgVarScopeId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="OrderRequestSOAP:initProcessResponse" bpdm:ID="_oeB3QGM_EeWE96vyQ05Dvg"></bpdm:linkset>
+            </bpdm:messagingtask>
+            <bpdm:messagingtask operation="multiply" partnerLink="sAndPoolForPortICalculatorPlkVar" portType="tns:ICalculator" isMyRole="false" enableSharing="false" bpdm:label="Calculator " bpdm:ID="_PG92cGNBEeWE96vyQ05Dvg">
+                <bpdm:linkset bpdm:type="assignments">
+                    <bpel:copy>
+                        <bpel:from>$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items_Price/textbox</bpel:from>
+                        <bpel:to>$TotalCalculatedValueSoap.parameters/tns:x</bpel:to>
+<mapper:mapperLink>
+  <mapper:vertice id="1264094181" targetPath="$TotalCalculatedValueSoap.parameters/tns:x" targetedBy="571834031-arg0"></mapper:vertice>
+  <mapper:vertice id="571834031" sourcePath="$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items_Price/textbox"></mapper:vertice>
+</mapper:mapperLink>
+                    </bpel:copy>
+                    <bpel:copy>
+                        <bpel:from>$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items_Quantity/textbox0</bpel:from>
+                        <bpel:to>$TotalCalculatedValueSoap.parameters/tns:y</bpel:to>
+<mapper:mapperLink>
+  <mapper:vertice id="1337960348" targetPath="$TotalCalculatedValueSoap.parameters/tns:y" targetedBy="332156708-arg0"></mapper:vertice>
+  <mapper:vertice id="332156708" sourcePath="$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items_Quantity/textbox0"></mapper:vertice>
+</mapper:mapperLink>
+                    </bpel:copy>
+                </bpdm:linkset>
+                <bpdm:linkset bpdm:type="outgoingMessage" bpdm:bpeltype="invoke-request" bpdm:messageVariable="TotalCalculatedValueSoap" bpdm:msgVarScopeId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="tns:multiply2In" bpdm:binding="tns:ICalculator" bpdm:ID="_A9ZD8GNSEeWE96vyQ05Dvg"></bpdm:linkset>
+                <bpdm:linkset bpdm:type="incomingMessage" bpdm:bpeltype="invoke-receive" bpdm:messageVariable="CalculatedResult" bpdm:msgVarScopeId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="tns:multiply2Out" bpdm:binding="tns:ICalculator" bpdm:ID="_BZtMgGNSEeWE96vyQ05Dvg"></bpdm:linkset>
+            </bpdm:messagingtask>
+            <bpdm:gateway bpdm:label="more than 1000" bpdm:ID="_2sTbMGM8EeWE96vyQ05Dvg" bpdm:gatewayType="data_xor" bpdm:isMerge="false">
+                <bpdm:linkset bpdm:type="case" bpdm:default="false" bpdm:ID="_JcSvcGM9EeWE96vyQ05Dvg" bpdm:targetDisplayName="Yes">
+                    <bpel:condition>$CalculatedResult.parameters/tns:Result &gt; 1000
+<mapper:mapperLink>
+  <mapper:vertice id="1283200079" targetPath="$condition" targetedBy="726960889-arg2"></mapper:vertice>
+  <mapper:vertice id="726960889" dimension="175x25" location="433,55">
+    <mapper:value>&gt;</mapper:value>
+  </mapper:vertice>
+  <mapper:vertice id="293767571" sourcePath="$CalculatedResult.parameters/tns:Result" targetedBy="726960889-arg0"></mapper:vertice>
+  <mapper:vertice id="1111388387" dimension="175x25" location="168,144" targetedBy="726960889-arg1">
+    <mapper:value>1000</mapper:value>
+  </mapper:vertice>
+</mapper:mapperLink></bpel:condition>
+                </bpdm:linkset>
+                <bpdm:linkset bpdm:type="case" bpdm:default="true" bpdm:ID="_KjzKEGM9EeWE96vyQ05Dvg" bpdm:targetDisplayName="default"></bpdm:linkset>
+                <bpel:sequence>
+                    <bpdm:messagingtask operation="createTask" partnerLink="wFmagic_01g75mNAEeWE96vyQ05DvgPlkVar" portType="OrderApprovalSOAP1:Workflow" isMyRole="false" enableSharing="false" bpdm:label="Order Approval From Mananger" bpdm:ID="_RTDFwGM8EeWE96vyQ05Dvg">
+                        <bpdm:linkset bpdm:type="assignments">
+                            <bpel:copy>
+                                <bpel:from>$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items</bpel:from>
+                                <bpel:to>$orderApprovalSOAP1CreateTaskRequestMsg.root/OrderApprovalSOAP1:taskInput/OrderApprovalSOAP1:FormModel/Order_Request_SOAP/Items</bpel:to>
+<mapper:mapperLink>
+  <mapper:vertice id="255060616" targetPath="$orderApprovalSOAP1CreateTaskRequestMsg.root/OrderApprovalSOAP1:taskInput/OrderApprovalSOAP1:FormModel/Order_Request_SOAP/Items" targetedBy="404026010-arg0"></mapper:vertice>
+  <mapper:vertice id="404026010" sourcePath="$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items"></mapper:vertice>
+</mapper:mapperLink>
+                            </bpel:copy>
+                            <bpel:copy>
+                                <bpel:from>$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Order_Date</bpel:from>
+                                <bpel:to>$orderApprovalSOAP1CreateTaskRequestMsg.root/OrderApprovalSOAP1:taskInput/OrderApprovalSOAP1:FormModel/Order_Request_SOAP/Order_Date</bpel:to>
+<mapper:mapperLink>
+  <mapper:vertice id="1649733479" targetPath="$orderApprovalSOAP1CreateTaskRequestMsg.root/OrderApprovalSOAP1:taskInput/OrderApprovalSOAP1:FormModel/Order_Request_SOAP/Order_Date" targetedBy="1212341947-arg0"></mapper:vertice>
+  <mapper:vertice id="1212341947" sourcePath="$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Order_Date"></mapper:vertice>
+</mapper:mapperLink>
+                            </bpel:copy>
+                            <bpel:copy>
+                                <bpel:from>$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items_Price</bpel:from>
+                                <bpel:to>$orderApprovalSOAP1CreateTaskRequestMsg.root/OrderApprovalSOAP1:taskInput/OrderApprovalSOAP1:FormModel/Order_Request_SOAP/Items_Price</bpel:to>
+<mapper:mapperLink>
+  <mapper:vertice id="1083341609" targetPath="$orderApprovalSOAP1CreateTaskRequestMsg.root/OrderApprovalSOAP1:taskInput/OrderApprovalSOAP1:FormModel/Order_Request_SOAP/Items_Price" targetedBy="1376735409-arg0"></mapper:vertice>
+  <mapper:vertice id="1376735409" sourcePath="$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items_Price"></mapper:vertice>
+</mapper:mapperLink>
+                            </bpel:copy>
+                            <bpel:copy>
+                                <bpel:from>$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items_Quantity</bpel:from>
+                                <bpel:to>$orderApprovalSOAP1CreateTaskRequestMsg.root/OrderApprovalSOAP1:taskInput/OrderApprovalSOAP1:FormModel/Order_Request_SOAP/Items_Quantity</bpel:to>
+<mapper:mapperLink>
+  <mapper:vertice id="209433330" targetPath="$orderApprovalSOAP1CreateTaskRequestMsg.root/OrderApprovalSOAP1:taskInput/OrderApprovalSOAP1:FormModel/Order_Request_SOAP/Items_Quantity" targetedBy="1331469029-arg0"></mapper:vertice>
+  <mapper:vertice id="1331469029" sourcePath="$orderRequestSOAPInitProcessRequestMsg.root/OrderRequestSOAP:taskOutput/OrderRequestSOAP:FormModel/Order_Request_SOAP/Items_Quantity"></mapper:vertice>
+</mapper:mapperLink>
+                            </bpel:copy>
+                        </bpdm:linkset>
+                        <bpdm:linkset bpdm:type="outgoingMessage" bpdm:bpeltype="invoke-request" bpdm:messageVariable="orderApprovalSOAP1CreateTaskRequestMsg" bpdm:msgVarScopeId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="OrderApprovalSOAP1:createTaskRequest" bpdm:binding="OrderApprovalSOAP1:WorkflowSoapBinding" bpdm:ID="_7_lV4GNAEeWE96vyQ05Dvg"></bpdm:linkset>
+                        <bpdm:linkset bpdm:type="incomingMessage" bpdm:bpeltype="invoke-receive" bpdm:messageVariable="orderApprovalSOAP1CreateTaskResponseMsg" bpdm:msgVarScopeId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="OrderApprovalSOAP1:createTaskResponse" bpdm:binding="OrderApprovalSOAP1:WorkflowSoapBinding" bpdm:ID="_89JKUGNAEeWE96vyQ05Dvg"></bpdm:linkset>
+                    </bpdm:messagingtask>
+                    <bpdm:messagingtask operation="notifyTaskCompletion" partnerLink="wFmagic_01g75mNAEeWE96vyQ05DvgPlkVar" portType="OrderApprovalSOAP1:Process" isMyRole="true" enableSharing="false" bpdm:label="Order  Requested Results" bpdm:ID="_Rv5Z0GM8EeWE96vyQ05Dvg">
+                        <bpdm:linkset bpdm:type="incomingMessage" bpdm:bpeltype="receive" bpdm:messageVariable="orderApprovalSOAP1NotifyTaskCompletionRequestMsg" bpdm:msgVarScopeId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="OrderApprovalSOAP1:notifyTaskCompletionRequest" bpdm:ID="_D9eZgGNBEeWE96vyQ05Dvg"></bpdm:linkset>
+                        <bpdm:linkset bpdm:type="outgoingMessage" bpdm:bpeltype="reply" bpdm:messageVariable="orderApprovalSOAP1NotifyTaskCompletionResponseMsg" bpdm:msgVarScopeId="_NZ5C4GM8EeWE96vyQ05Dvg" bpdm:variableIsManaged="true" bpdm:messageType="OrderApprovalSOAP1:notifyTaskCompletionResponse" bpdm:ID="_GHahgGNBEeWE96vyQ05Dvg"></bpdm:linkset>
+                    </bpdm:messagingtask>
+                </bpel:sequence>
+                <bpel:sequence></bpel:sequence>
+            </bpdm:gateway>
+            <bpdm:gateway bpdm:label="Final Status" bpdm:ID="_6rTAUGM8EeWE96vyQ05Dvg" bpdm:gatewayType="data_xor" bpdm:isMerge="true"></bpdm:gateway>
+            <bpdm:messagingtask eventType="end: empty" bpdm:label="End of the Event" bpdm:ID="_tDyBwGM8EeWE96vyQ05Dvg"></bpdm:messagingtask>
+        </bpel:sequence>
+    </bpel:scope>
+</bpel:process>

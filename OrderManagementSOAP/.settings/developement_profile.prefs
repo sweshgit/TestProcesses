@@ -1,0 +1,13 @@
+
+build.required=yes
+deploy_bundleShouldBeDeployed=true
+deploy_gi_serverUrl=http\://localhost\:8080/gi
+deploy_serverUrl=http\://localhost\:8080/ode
+deploymenttimeout=120
+diagram_baseUri=http\://ordermanagementsoap.com
+eclipse.preferences.version=1
+full.build.required=no
+is.mapper.too.many.elements.exceeded=no
+serverpingtimeout=10
+type=non.unique
+uuid=5068dde0-5e55-492a-8f2a-5acf32dafc97
